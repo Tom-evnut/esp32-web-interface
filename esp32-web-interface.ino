@@ -58,11 +58,11 @@
 
 #define DBG_OUTPUT_PORT Serial2
 #define INVERTER_PORT UART_NUM_0
-#define INVERTER_RX 3
-#define INVERTER_TX 1
+#define INVERTER_RX 1 //3 - Swapped for Wemos board onto Zombie and other OI boards
+#define INVERTER_TX 3 //1 - Swapped for Wemos board onto Zombie and other OI boards
 #define UART_TIMEOUT (100 / portTICK_PERIOD_MS)
 #define UART_MESSBUF_SIZE 100
-#define LED_BUILTIN 13 //clashes with SDIO, need to change to suit hardware and uncomment lines
+#define LED_BUILTIN 2 //clashes with SDIO, need to change to suit hardware and uncomment lines
 
 #define RESERVED_SD_SPACE 2000000000
 #define SDIO_BUFFER_SIZE 16384
